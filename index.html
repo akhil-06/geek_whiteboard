@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Draw Doodles</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div class="text">Just Draw !</div>
+    <div class="slidecontainer">
+      <div class="brushsize">Brush Size</div>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="10"
+        class="slider"
+        id="myRange"
+      />
+    </div>
+    <div class="buttons">
+      <button id="clear" type="button">Clear Screen</button>
+    </div>
+  </body>
+  <div id="picker">
+    <input type="color" id="favcolor" name="favcolor" value="#000000" />
+  </div>
+  <button id="fill" type="button">Fill Color</button>
+  <script src="script.js"></script>
+</html>
